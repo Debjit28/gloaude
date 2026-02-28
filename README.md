@@ -1,38 +1,34 @@
-# go-laude
+[![progress-banner](https://backend.codecrafters.io/progress/claude-code/7ee9a9fa-406d-45ba-baba-b8b305150465)](https://app.codecrafters.io/users/codecrafters-bot?r=2qF)
 
-A Go program that interacts with a language model (Claude via OpenRouter) and can:
+This is a starting point for Go solutions to the
+["Build Your own Claude Code" Challenge](https://codecrafters.io/challenges/claude-code).
 
-- Read files
-- Write files
-- Execute Bash commands
+Claude Code is an AI coding assistant that uses Large Language Models (LLMs) to
+understand code and perform actions through tool calls. In this challenge,
+you'll build your own Claude Code from scratch by implementing an LLM-powered
+coding assistant.
 
-This project is a learning tool and experimental AI assistant shell built in Go.
+Along the way you'll learn about HTTP RESTful APIs, OpenAI-compatible tool
+calling, agent loop, and how to integrate multiple tools into an AI assistant.
 
----
+**Note**: If you're viewing this repo on GitHub, head over to
+[codecrafters.io](https://codecrafters.io) to try the challenge.
 
-## Features
+# Passing the first stage
 
-- Send prompts to the AI from the command line
-- AI can call three tools:
-  - **Read**: Read and return the contents of a file
-  - **Write**: Write content to a file
-  - **Bash**: Execute a shell command
-- Loop interaction up to 10 rounds per session
-- Fully logs AI responses and tool outputs
+The entry point for your `claude-code` implementation is in `app/main.go`. Study
+and uncomment the relevant code, and submit to pass the first stage:
 
----
+```sh
+codecrafters submit
+```
 
-## Prerequisites
+# Stage 2 & beyond
 
-- Go installed (version 1.20+ recommended)
-- An OpenRouter API key with access to Claude or compatible models
+Note: This section is for stages 2 and beyond.
 
----
-
-## Setup
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/<your-username>/go-llm-shell.git
-cd go-llm-shell
+1. Ensure you have `go (1.25)` installed locally.
+2. Run `./your_program.sh` to run your program, which is implemented in
+   `app/main.go`.
+3. Run `codecrafters submit` to submit your solution to CodeCrafters. Test
+   output will be streamed to your terminal.
